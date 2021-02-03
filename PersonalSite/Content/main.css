@@ -1,0 +1,413 @@
+@font-face {
+    font-family: Allura-Regular;
+    src: url(Fonts/Allura-Regular.ttf);
+  }
+
+  @font-face{
+      font-family: Alte-Haas-Grotesk;
+      src: url(Fonts/AlteHaasGroteskRegular.ttf);
+  }
+
+
+/* General page formatting */
+body{
+    margin:0;
+    padding: 0;
+    background-color: #c2cccc;
+    font-family: Biotif-Regular;
+}
+
+a{
+    text-decoration: none;
+}
+
+.no_bullets{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.no_bullets li{
+    margin:15px 15px 15px 0;
+}
+.no_bullets img
+{
+    vertical-align: middle; /* | top | bottom */
+    margin-right:5px;
+}
+
+.no_bullets ul li span{
+    display: inline-block;
+    vertical-align: middle; /* | top | bottom */
+}
+
+/* Navigation */
+nav{
+    z-index:100;
+    position: fixed;
+}
+
+.btn{
+    position: absolute;
+    height: 20vh;
+    transition: all 1s ease;
+    cursor: pointer;
+}
+
+#menu_btn{
+    height: 10vh;
+    left:30px;
+    top: 30px;
+    opacity: 0.5;
+}
+
+#gallery{
+    top: 15px;
+    left: 215px;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 1s, opacity 1s ease;
+}
+
+#downloads{
+    left: 215px;
+    top: 225px;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 1s, opacity 1s ease, height 0.3s ease;
+}
+
+#feedback_btn{
+    left: 30px;
+    top: 330px;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 1s, opacity 1s ease, height 0.3s ease;
+}
+
+#gallery.active, #downloads.active, #feedback_btn.active {
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 1s, opacity 1s ease, height 0.3s ease;
+}
+
+#menu_btn:hover{
+    opacity: 1;
+}
+
+.btn:hover{
+    height: 21vh;
+    transition: all 1s ease;
+}
+
+#menu_btn.active{
+    height: 20vh;
+    top: 120px;
+    opacity: 1;
+    transition: all 1s ease;
+}
+
+
+/* Landing image */
+#top{
+    height: 100vh;
+    background: no-repeat center right fixed url(Images/leaves_background.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.lead{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    color: #001a19;
+    font-size: 100px;
+    border-bottom: 1px solid #FFFFFF;
+    border-bottom-color: #ffffff73;
+}
+p.lead{
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.451);
+    font-size: 40px;
+}
+
+/* Profile section */
+
+#profile{
+    background-color: #3b3b3b;
+    padding: 70px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h2{
+    color: #3cffe1;
+    font-size:40px;
+}
+
+#contact_info ul, #contact_info a, #about_me p{
+    color: white;
+    font-size: 25px;
+    line-height: 1.6;
+}
+
+#about_me{
+    text-align: right;
+}
+
+#contact_info a:hover{
+    color: rgba(255,255,255,0.45);
+}
+
+#contact_info{
+    text-align: left;
+    list-style-type: none;
+}
+
+.center_pic {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
+
+/* Longer paragraphs */
+
+.contents{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.col-lg-6{
+    padding:30px;
+}
+
+.contents ul{
+    text-align: left;
+}
+
+.contents p, .contents ul{
+    font-family: Alte-Haas-Grotesk;
+    font-size: 15px;
+}
+
+
+.heading{
+    background: no-repeat center right url(Images/leaves_background.jpg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.heading h2{
+    color: white;
+    font-family: Allura-Regular;
+    font-size: 80px;
+    font-weight: 100;
+}
+
+h3, h4{
+    margin: 0;
+}
+
+h3{
+    margin-top: 15px;
+    font-size: 23px;
+    color: #004240;
+}
+
+h4{
+    color: rgb(0, 66, 64, 0.7)
+}
+
+
+
+/* Shorter paragraphs */
+
+#personal_skills ul{
+    text-align: center;
+    font-size: 21px;
+    font-weight: 500;
+}
+
+/* Feedback and reviews section */
+#feedback{
+    background-color: #3b3b3b;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+#feedback h2{
+    width: 100%;
+    padding-left: 30px;
+}
+
+form{
+    width: 100%;
+    height: 100%;
+    padding-left: 15px;
+}
+label{
+    color:white;
+    font-size: 23px;
+}
+
+input{
+    opacity: 0.5;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+input{
+    width: 46.8%;
+    height: 30px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.5 ), 0 1px 4px rgba(0, 0, 0, 0.24);
+}
+
+#title{
+    width:95%;
+}
+
+textarea{
+    width: 95%;
+    max-width: 95%;
+    height: 150px;
+    opacity: 0.5;
+    border-radius: 5px;
+    resize: none;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.8 ), 0 1px 4px rgba(0, 0, 0, 0.24);
+}
+
+button{
+    height: 50px;
+    width: 100px;
+    margin-top:20px;
+    margin-right:40px;
+    border-radius: 5px;
+    float: right;
+    background-color: rgb(60, 255, 225,0.7);
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.5 ), 0 1px 4px rgba(0, 0, 0, 0.24);
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: rgb(60, 255, 225,1);
+}
+
+#reviews{
+    max-height: 450px;
+    background-color: rgb(255, 255, 255, 0.5);
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 1 ), 0 1px 4px rgba(0, 0, 0, 0.24);
+    overflow-x: auto; 
+    overflow-y: auto;
+}
+
+.review{
+    background-color: #64ebd6;
+    margin: 15px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.review_names{
+    font-size: 18px;
+    color: #006d69;
+    font-weight: 600;
+    text-align: right;
+    margin: 5px 10px;
+}
+
+h5{
+    font-size: 25px;
+    margin: 0;
+    text-decoration: underline;
+    line-height: 1.5;
+}
+
+.review_text{
+    font-family: Alte-Haas-Grotesk;  
+}
+
+@media (max-width:1300px){
+
+    .center_pic{
+        width: 100%;
+    }
+
+    #contact_info ul, #contact_info a, #about_me p{
+        font-size: 18px;
+    }
+
+}
+
+@media(max-width:1000px){ 
+    
+    #menu_btn, #menu_btn.active, #gallery, #downloads, #feedback_btn {
+        height: 15vh;
+        left: 1vh;
+        top: 2vh;
+        transition: visibility 0s, opacity 1s ease;
+    }
+    
+    #gallery.active{
+        top: 16vh;
+    } 
+    
+    #downloads.active{
+        top: 30vh;
+    } 
+    
+    #feedback_btn.active {
+        top:44vh;
+    }
+    
+    
+    .btn:hover{
+        cursor: pointer;
+        height: 11vh;
+        transition: all 1s ease;
+    }
+    
+}
+
+@media (max-width:1000px) and (min-width:600px){
+    .center_pic{
+        width: 50%;
+    }
+} 
+
+@media (max-width:500px){
+    h1{
+        font-size: 60px;
+    }
+    .center_pic{
+        width: 100%;
+        padding:15px;
+    }
+    h2{
+        font-size: 25px;
+    }
+    #contact_info ul, #contact_info a, #about_me p{
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    #profile{
+        padding: 10px;
+    }
+
+    .heading h2{
+        font-size: 60px;
+    }
+}

@@ -1,0 +1,168 @@
+@font-face{
+    font-family: Alte-Haas-Grotesk;
+    src: url(Fonts/AlteHaasGroteskRegular.ttf);
+}
+
+@font-face {
+    font-family: Allura-Regular;
+    src: url(Fonts/Allura-Regular.ttf);
+  }
+
+body{
+    margin:0;
+    padding: 0;
+    background: no-repeat center right fixed url(Images/leaves_background.jpg);
+    background-size: cover;
+    font-family: Biotif-Regular;
+}
+
+#back_btn{
+    height: 10vh;
+    left:30px;
+    top: 30px;
+    opacity: 0.5;
+    border-radius: 0;
+    position: relative;
+}
+
+#back_btn:hover{
+    opacity: 1;
+}
+
+.container{
+    width: 90vh;
+    height: 70vh;
+    background-color: rgb(255, 255, 255);
+    position: absolute; 
+    left: 50%;
+    top: 50%; 
+    transform: translate(-50%, -50%);
+    padding: 30px;
+    border-radius: 3%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.library{
+    width: 75vh;
+    height: 55vh;
+    padding: 50px;
+    border-radius: 3%;
+    background-color: rgba(41, 128, 125, 0.5);
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    overflow-x: auto; 
+    overflow-y: auto;
+}
+
+h1{
+   font-size: 80px;
+   color: #001a19;
+   font-family: Allura-Regular;
+   margin: 10px 0;
+}
+
+a{
+    text-decoration: none;
+    color:  #001a19;
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+img.download_btn{
+    width: 30px;
+    vertical-align: bottom; /* | top | bottom */
+    margin-right: 15px;
+}
+
+@media (max-width:1100px){
+    .container{
+        width: 60vh;
+        height: 65%;
+        margin-top: 40px;
+    }
+
+    .library{
+        width: 50vh;
+    }
+
+    h1{
+        font-size: 70px ;
+    }
+
+    #back_btn{
+        width: 10vh;
+    }
+}
+
+@media (max-width:600px){
+    .container{
+        width: 40vh;
+    }
+
+    .library{
+        width: 35vh;
+        padding: 25px;
+    }
+
+    h1{
+        font-size: 50px;
+    }
+}
+
+@media (max-width:415px){
+    .container{
+        width: 35vh;
+    }
+
+    .library{
+        width: 30vh;
+        padding: 25px;
+    }
+    a{
+        font-size: 18px;
+        margin: 5px 0;
+    }
+    
+    img{
+        margin-right: 5px;
+        width: 25px;
+    }
+
+}
+
+@media (max-width:350px){
+    .container{
+        width: 35vh;
+    }
+
+    .library{
+        width: 30vh;
+        padding: 25px;
+    }
+
+    h1{
+        font-size: 40px;
+    }
+
+    a{
+        font-size: 15px;
+        margin: 5px 0;
+    }
+}
+
+
+@media (max-width:300px){
+    .container{
+        width: 30vh;
+    }
+
+    .library{
+        width: 25vh;
+        padding: 25px;
+    }
+}

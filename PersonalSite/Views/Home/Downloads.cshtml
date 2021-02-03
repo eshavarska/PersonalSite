@@ -1,0 +1,27 @@
+﻿
+@{
+    ViewBag.Title = "Downloads";
+}
+
+@section Styles{
+    <link rel="stylesheet" type="text/css" href="~/Content/downloads.css">
+}
+
+<body>
+    <a href='@Url.Action("Index", "Home")'> <img src="~/Content/Menu_Icons/back_btn.png" alt="Back button" id="back_btn"> </a>
+    <div class=container>
+        <h1>Files library</h1>
+        <div class="library">
+            <a href="Files/Elena Shavarska.pdf" download>
+                <img src="~/Content/Images/download.png" class="download_btn">
+                Resume_EN.pdf
+            </a>
+            <a href="Files/profile_pic.jpg" download>
+                <img src="~/Content/Images/download.png" class="download_btn">
+                Profile_Picture.png
+            </a>
+        </div>
+    </div>
+
+</body>
+

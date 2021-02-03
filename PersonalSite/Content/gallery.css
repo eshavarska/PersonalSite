@@ -1,0 +1,71 @@
+@font-face {
+    font-family: Allura-Regular;
+    src: url(Fonts/Allura-Regular.ttf);
+  }
+
+body{
+    margin:0;
+    padding: 0;
+    background: no-repeat center right fixed url(Images/leaves_background.jpg);
+    background-size: cover;
+}
+
+#back_btn{
+    cursor: pointer;
+    height: 10vh;
+    left:30px;
+    top: 30px;
+    opacity: 0.5;
+    border-radius: 0;
+    position: relative;
+}
+
+#back_btn:hover{
+    opacity: 1;
+}
+
+h1{
+    font-family: Allura-Regular;
+    font-size: 100px;
+    font-weight: 500;
+    color: white;
+    text-align: center;
+    letter-spacing: 0.2em;
+    margin-top: 10px;
+}
+
+.row{
+    padding-left: 30px;
+}
+
+.img-fluid{
+    cursor: pointer;
+    margin: 15px 20px;
+    border-radius: 10%;
+    width: 250px;
+}
+
+@media (max-width:1100px){
+    #back_btn{
+        left:1vh;
+        top:2vh;
+    }
+}
+
+@media (max-width:800px){
+    h1{
+        font-size: 70px ;
+    }
+
+    .row{
+        padding: 0;
+    }
+
+}
+
+@media (max-width:600px){
+    .img-fluid{
+        width: 45%;
+        margin:5px;
+    }
+}
